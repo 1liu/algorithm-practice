@@ -9,6 +9,8 @@ var singleNumber = function (nums) {
 
 };
 
+let arr = [1,1,2,2,3,4,3]
+console.log(singleNumber(arr))
 /*
 hashtable
 Time: O(n)
