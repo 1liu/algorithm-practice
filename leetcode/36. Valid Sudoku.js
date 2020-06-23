@@ -28,4 +28,8 @@ var isValidSudoku = function(board) {
   }
   return true;
 };
+/*
+Time: O(n)
+Space: O(n)
+*/
 // @lc code=end
