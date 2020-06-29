@@ -31,4 +31,9 @@ var validPalindrome = function (s) {
   }
   return true;
 };
+/*
+Time: O(n)
+Space: O(1)
+ */
+
 // @lc code=end
