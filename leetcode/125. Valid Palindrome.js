@@ -10,6 +10,19 @@
  * @return {boolean}
  */
 var isPalindrome = function(s) {
+<<<<<<< HEAD
+ let str = s.replace(/\W/g, '').toLowerCase();
+ let left = 0, right = str.length-1;
+ while(left<right){
+   if(str[left]!==str[right]){
+     return false;
+   }else{
+     left++,right--;
+   }
+ }
+ return true;
+};
+=======
   let str = s.replace(/\W|_/g, '').toLowerCase();
   let left = 0, right = str.length-1;
   while(left<right){
@@ -30,4 +43,5 @@ otherwise increment left pointer and decrement right point;
 do the same check while left is small than right
  */
 
+>>>>>>> ccad576e1cb7d7635d1e0aaa32b652c3bdcc9ead
 // @lc code=end
