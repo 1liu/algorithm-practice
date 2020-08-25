@@ -30,6 +30,7 @@ var isPalindrome = function (head) {
     pre.next = reversed;
     reversed = pre;
   }
+  /* even number  */
   if (head) mid = mid.next;
   while(mid){
     if(mid.val!==reversed.val) return false;
