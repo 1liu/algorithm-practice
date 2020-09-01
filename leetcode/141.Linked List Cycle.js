@@ -17,7 +17,7 @@
  * @param {ListNode} head
  * @return {boolean}
  */
-var hasCycle = function (head) {
+/* var hasCycle = function (head) {
   if (head == null || head.next == null) return false;
 
   let x = head.next;
@@ -29,9 +29,27 @@ var hasCycle = function (head) {
     y = y.next;
   }
   return true;
-};
+}; */
 /*
 Time: O(n)
 Space: O(1)
  */
+var hasCycle = function (head) {
+  if (head == null || head.next == null) return false;
+
+  let map = new Map();
+  while (head) {
+    if (map.has(head)) return true;
+    map.set(head, true);
+    head = head.next;
+  }
+  return false;
+};
+
+
+/*
+time: O(n)
+space: O(n)
+ */
+
 // @lc code=end
